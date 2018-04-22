@@ -11,5 +11,6 @@ make PETSC_DIR=`pwd` PETSC_ARCH=linux-gnu-opt all
 make PETSC_DIR=`pwd` PETSC_ARCH=linux-gnu-opt check
 make PETSC_DIR=`pwd` PETSC_ARCH=linux-gnu-opt streams
 cd ..
+export PETSC_DIR=`pwd`/petsc
+export PETSC_ARCH=linux-gnu-opt
 make
-
