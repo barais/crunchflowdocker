@@ -8,3 +8,8 @@ To build CrunchFlow, on linux just run build.sh script. To build the container j
 docker build -t yourname/crunchflow .
 ```
 
+To run the docker 
+
+```bash
+docker run -t -i -v "YOURFOLDERWITHDATA":/data -w /data barais/crunchtop 
+```
