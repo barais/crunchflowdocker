@@ -1,8 +1,5 @@
 #! /bin/bash
 cd /data 
-echo $RES 
-echo $DIFFUSION
-echo $DEPENDANCE
 mkdir /tmp/compute 
 cp * /tmp/compute 
 cd /tmp/compute 
@@ -12,6 +9,3 @@ sed -i -e "s/<?DEPENDANCE?>/$DEPENDANCE/g" ./datacom.dbs
 mkdir -p /data/crunchtop/$RES 
 cp -r *.out /data/crunchtop/$RES 
 cp -r *.txt /data/crunchtop/$RES
-echo $RES 
-echo $DIFFUSION
-echo $DEPENDANCE
